@@ -7,6 +7,8 @@ public class Object {
 
     private int SPEED = 1;//Movement speed, number of pixels to move
 
+    private boolean STATIC = false;
+
     private Point centerBase;//Center of object bottom
     private Point centerMiddle;//Exact center of object
     private Point leftTop;//Top left point for Java orientation
@@ -80,5 +82,11 @@ public class Object {
     }
 
 
+    public boolean isStatic() {
+        return STATIC;
+    }
 
+    public void setSTATIC(boolean STATIC) {
+        this.STATIC = STATIC;
+    }
 }
