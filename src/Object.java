@@ -9,15 +9,15 @@ public class Object {
 
     private boolean STATIC = false;
 
-    private Point centerBase;//Center of object bottom
-    private Point centerMiddle;//Exact center of object
+    protected Point centerBase;//Center of object bottom
+    protected Point centerMiddle;//Exact center of object
     private Point leftTop;//Top left point for Java orientation
 
-    private int weight;//Weight/mass of object
+    protected Double weight;//Weight/mass of object
 
-    private String type;//Group this object belongs to
+    protected String type;//Group this object belongs to
 
-    private Rectangle outLine;//Area/edges of object as a rectangle
+    protected Rectangle outLine;//Area/edges of object as a rectangle
 
     private Point[][] shadow;//Use for collision detection
 
@@ -25,7 +25,7 @@ public class Object {
 
     }
 
-    public Object(Rectangle theRectangle, String theType, int theWeight){
+    public Object(Rectangle theRectangle, String theType, Double theWeight){
 
         outLine = theRectangle;
         weight = theWeight;
